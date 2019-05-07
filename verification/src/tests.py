@@ -11,18 +11,30 @@ Each test is dict with
 TESTS = {
     "Basics": [
         {
-            "input": ["Alex", 32],
-            "answer": "Hi. My name is Alex and I'm 32 years old"
+            "input": ["A simple string"],
+            "answer": False
         },
         {
-            "input": ["Frank", 68],
-            "answer": "Hi. My name is Frank and I'm 68 years old"
+            "input": ["this string has a key"],
+            "answer": True
+        },
+        {
+            "input": ["this string has a better KEY"],
+            "answer": True
         }
     ],
     "Extra": [
         {
-            "input": ["Pepe", 8],
-            "answer": "Hi. My name is Pepe and I'm 8 years old"
+            "input": ["every ke inside key"],
+            "answer": True
+        },
+        {
+            "input": ["it is not a k e y"],
+            "answer": False
+        },
+        {
+            "input": ["Weird KeY"],
+            "answer": True
         }
     ]
 }

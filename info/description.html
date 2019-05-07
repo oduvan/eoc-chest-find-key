@@ -1,15 +1,19 @@
 <p>
-	In this mission you should write a function that introduces a person with the given parameters in attributes.
+	Find out if the given string has a sub-string "key" inside?
+</p>
+
+<p>
+	Word Key can be in any case. key, KEY or even KeY
 </p>
 
 
 
 <p>
-    <strong>Input: </strong> Two arguments. String and positive integer.
+    <strong>Input: </strong> String.
 </p>
 
 <p>
-    <strong>Output: </strong> String.
+    <strong>Output: </strong> Boolean.
 </p>
 
 
@@ -20,12 +24,12 @@
     </p>
 
 {% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">sayHi("Alex", 32) == "Hi. My name is Alex and I'm 32 years old"
-sayHi("Frank", 68) == "Hi. My name is Frank and I'm 68 years old"
+<pre class="brush: javascript">findKey('A simple string') == false
+findKey('this string has a key') == true
 </pre>
 {% else %}
-<pre class="brush: python">say_hi("Alex", 32) == "Hi. My name is Alex and I'm 32 years old"
-say_hi("Frank", 68) == "Hi. My name is Frank and I'm 68 years old"
+<pre class="brush: python">find_key('A simple string') == False
+find_key('this string has a key') == True
 </pre>
 {% endif %}
 </div>
