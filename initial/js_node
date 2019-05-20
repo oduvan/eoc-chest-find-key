@@ -1,21 +1,18 @@
-"use strict";
 
-function findKey(a) {
-
+export function findKey(a: string): boolean {
     // your code here
-    return undefined;
+    return false;
 }
 
-var assert = require('assert');
-if (!global.is_checking) {
-    console.log('Example:');
-    console.log(findKey('A simple string'));
+import * as assert from 'assert';
 
-    // These "asserts" are used for self-checking and not for an auto-testing
-    assert.equal(findKey('A simple string'), false);
-    assert.equal(findKey('this string has a key'), true);
-    assert.equal(findKey('this string has a better KEY'), true);
+console.log('Example:');
+console.log(findKey('A simple string'));
 
-    console.log("Coding complete? Click 'Check' to earn cool rewards!");
-}
+// These "asserts" are used for self-checking and not for an auto-testing
+assert.equal(findKey('A simple string'), false);
+assert.equal(findKey('this string has a key'), true);
+assert.equal(findKey('this string has a better KEY'), true);
+
+console.log("Coding complete? Click 'Check' to earn cool rewards!");
     
